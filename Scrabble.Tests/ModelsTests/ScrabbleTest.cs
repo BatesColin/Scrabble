@@ -9,9 +9,31 @@ namespace Scrabble.Tests
   public class ScrabbleTest
   {
     [TestMethod]
-    public void ExampleTest_True()
+    public void SetWord_True()
     {
-      // eventually your testing code will go here
+      //arrange
+      string testword = "iLoveTests";
+      Scrabble newScrabble = new Scrabble();
+
+      //act
+      newScrabble.SetWord(testword);
+      string result = newScrabble.GetWord();
+
+      //assert
+      Assert.AreEqual(testword, result);
+    }
+    [TestMethod]
+    public void ScoreFind_True()
+    {
+      //arrange
+      char newLetter = 'D';
+
+      //act
+      Scrabble.ScoreFind(newLetter);
+      int result = Scrabble.score;
+
+      //assert
+      Assert.AreEqual(2, result);
     }
   }
 }

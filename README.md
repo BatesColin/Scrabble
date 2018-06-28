@@ -8,7 +8,10 @@
 
 _This website was created to calculate the scrabble score of a word.
 Specs:
-1. 
+1. This will take an input from the user.
+2. this App will break the word down to its letters
+3. Pull score from dictionary for each letter
+4. Add score total
 _
 
 ## Setup/Installation Requirements
